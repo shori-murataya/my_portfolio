@@ -1,0 +1,73 @@
+/* 全体要素 */
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/* ヘッダー */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    background-color: rgba(156, 218, 197, 0.918);
+    position: fixed;
+    z-index: 10;
+}
+header .header-logo{
+    font-size: 30px;
+    font-family: 'Oleo Script', cursive;
+    margin-left: 40px;
+}
+header .header-menu{
+    display: flex;
+    margin-right: 20px;
+}
+header .header-menu li{
+    padding: 0 20px 0 20px;
+    border-left: 1px solid black;
+    cursor: pointer;
+}
+header .header-menu li:hover{
+    color: blanchedalmond;
+    transition: all 0.2s;
+}
+/* HOME */
+.home{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255,200,172);
+    background: url("../images/home.jpg");
+    background-size: cover;
+}
+.home .home-p{
+    width: 44%;
+    height: 30vh;
+    position: absolute;
+    top: 35%;
+    margin-left: 40px;
+    color: rgb(199, 190, 179);
+    text-shadow: 2px 2px 5px black;
+}
+.home .home-p .home-name{
+    margin-bottom: 20px;
+    font-style: normal;
+}
+/* ABOUT */
+.about{
+    width: 100%;
+    height: 100vh;
+    background-color: blanchedalmond;
+}
+
+/* フッター */
+footer{
+    width: 100%;
+    height: 60px;
+}
+
