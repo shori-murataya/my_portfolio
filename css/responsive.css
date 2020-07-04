@@ -1,0 +1,39 @@
+@media(max-width:1000px){
+
+}
+@media(max-width:670px){
+  header .header-menu{
+    display: none;
+}
+  header .header-logo{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+  }
+  .home .home-p{
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    min-width: 320px;
+  }
+  .about .about-intro{
+    min-width: 320px;
+    padding-bottom: 40px;
+  }
+  .works .works-p{
+    padding-top: 120px;
+  }
+  .contact{
+    padding-bottom: 50px;
+  }
+  .contact form{
+    width: 90%;
+  }
+  footer{
+    height: 30px;
+  }
+  footer .copyright{
+    font-size: 8px;
+    line-height: 30px;
+  }
+}
