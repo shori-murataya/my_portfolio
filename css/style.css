@@ -1,4 +1,7 @@
 /* 全体要素 */
+*,*::before,*::after{
+    box-sizing: border-box;
+  }
 *{
     padding: 0;
     margin: 0;
@@ -38,6 +41,40 @@ header .header-menu li:hover{
     color: blanchedalmond;
     transition: all 0.2s;
 }
+/* ハンバーガーメニュー */
+input#check{
+    display: none;
+}
+.bars div{
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin: 3px;
+}
+.bars{
+    display: none;
+    position: relative;
+    right: 10px;
+}
+
+ul.burger-menu{
+    width: 140px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -140px;  
+    background-color: white;
+    transition:all 0.2s;
+    z-index: 10;
+}
+.burger-menu li{
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin: 15px;
+}
+
+
+
 /* HOME */
 .home{
     height: 100vh;
@@ -45,16 +82,19 @@ header .header-menu li:hover{
     background-color: rgb(255,200,172);
     background: url("../images/home.jpg");
     background-size: cover;
+    background-position: bottom;
 }
+
 .home .home-p{
-    width: 35%;
-    height: 30vh;
-    min-width: 400px;
+    width: 45%;
+    min-width: 410px;
     position: absolute;
+    padding: 10px;
     top: 35%;
     margin-left: 40px;
-    color: rgb(199, 190, 179);
-    text-shadow: 2px 2px 5px black;
+    color: rgb(46, 45, 45);
+    background-color: rgba(255, 255, 255, 0.541);
+    border-radius: 10px;
 }
 .home .home-p .home-name{
     margin-bottom: 20px;
@@ -66,7 +106,6 @@ header .header-menu li:hover{
 /* ABOUT */
 .about{
     width: 100%;
-    height: 100vh;
     background-color: blanchedalmond;
 }
 .about .about-p{
@@ -75,12 +114,9 @@ header .header-menu li:hover{
     font-family: 'Oleo Script', cursive;
     padding: 60px 0 40px 0;
 }
-.about .icon{
-    width:240px;
-    height: 270px;
-    margin: 0 auto;
-}
 .about .icon img{
+    width: auto;
+    height: 280px;
     display: block;
     margin: 0 auto;
 }
@@ -94,7 +130,7 @@ header .header-menu li:hover{
 /* WORKS */
 .works{
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: blanchedalmond;
 }
 .works .works-p{
@@ -106,7 +142,7 @@ header .header-menu li:hover{
 /* PORTFLIO */
 .portfolio{
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: blanchedalmond;
 }
 .portfolio .portfolio-p{
@@ -118,7 +154,6 @@ header .header-menu li:hover{
 /* CONTACT */
 .contact{
     width: 100%;
-    height: 100vh;
     background-color: blanchedalmond;
 }
 .contact .contact-p{
@@ -129,7 +164,7 @@ header .header-menu li:hover{
 }
 .contact form{
     width: 50%;
-    height: 70vh;
+    /* height: 70vh; */
     margin: 0 auto;
 }
 form .ne{
@@ -142,6 +177,7 @@ form .text{
 }
 form .send-box{
     width: 100%;
+    height: 40px;
     position: relative;
 }
 form .send{
