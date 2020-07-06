@@ -38,9 +38,7 @@ input[type="checkbox"]:checked ~ ul.burger-menu{
     min-width: 320px;
     padding-bottom: 40px;
   }
-  .works .works-p{
-    padding-top: 120px;
-  }
+
   .contact{
     padding-bottom: 50px;
   }
