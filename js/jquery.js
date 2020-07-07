@@ -1,0 +1,23 @@
+$('.bars').on('click',function(){
+  if($(this).hasClass('active')){
+    $(this).removeClass('active');
+  } else {
+    $(this).addClass('active');
+    $('nav').addClass('open');
+    $('.overlay').addClass('open');
+    $('.close').addClass('open');
+  }
+});
+$('.overlay').on('click',function(){
+  if($(this).hasClass('open')){
+    $(this).removeClass('open');
+    $('nav').removeClass('open');      
+  }
+});
+$('.close').on('click',function(){
+  if($(this).hasClass('open')){
+  $(this).removeClass('open');
+  $('nav').removeClass('open');
+  $('.overlay').removeClass('open');
+  }
+});

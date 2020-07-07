@@ -7,12 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/common.css"/>
-    
-
-
     <title>Mura-Sho-Portfolio</title>
 </head>
 <body>
@@ -25,21 +21,22 @@
       <a href="#4"><li class="">PORTFOLIO</li></a>
       <a href="#5"><li class="">CONTACT</li></a>
     </ul>
-    
-    <div class="burger">
-      <input type="checkbox" id="check">
-      <label class="bars" for="check"><div></div><div></div><div></div></label>
-      <ul class="burger-menu">
-        <label for="check">×</label>
-        <a href="#1"><li>HOME</li></a>
-        <a href="#2"><li for="check">ABOUT</li></a>
-        <a href="#3"><li for="check">WORKS</li></a>
-        <a href="#4"><li for="check">PORTFOLIO</li></a>
-        <a href="#5"><li for="check">CONTACT</li></a>
-      </ul>
-    </div>
-  
+    <div class="bars"><div></div><div></div><div></div></label>
   </header>
+
+<!-- ハンバーガー -->
+  <div class="overlay"></div>
+  <nav>
+    <ul class="burger-menu">
+      <a href="#1"><li class="close">HOME</li></a>
+      <a href="#2"><li class="close">ABOUT</li></a>
+      <a href="#3"><li class="close">WORKS</li></a>
+      <a href="#4"><li class="close">PORTFOLIO</li></a>
+      <a href="#5"><li class="close">CONTACT</li></a>
+    </ul>
+  </nav>
+<!-- ここまで -->
+
   <div class="home" id="1">
     <div class="home-p">
       <h1 class="home-name">WebCreater Mura-Sho</h1>
@@ -84,12 +81,11 @@
         </div>
       </form>
   </div>
-
   <footer>
     <p class="copyright">CopyRight WebCreater Mura-Sho</p>
   </footer>
 
-
+  <script src="js/jquery.js"></script>
   <script type="text/javascript" src="slick/slick.js"></script>
   <script type="text/javascript" src="slick/common.js"></script>
 </body>

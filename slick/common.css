@@ -11,3 +11,12 @@
   max-width: 360px;
   margin: 0 auto;
 }
+
+.prev{
+  padding-right: 10px;
+  cursor: pointer;
+}
+.next{
+  padding-left: 10px;
+  cursor: pointer;
+}

@@ -14,9 +14,6 @@
 .bars{
   display: block;
 }
-input[type="checkbox"]:checked ~ ul.burger-menu{
-  right:0;
-}
 }
 @media(max-width:670px){
 
