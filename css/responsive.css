@@ -35,6 +35,10 @@
     min-width: 320px;
     padding-bottom: 40px;
   }
+  .portfolio .port1{
+    width: 80%;
+    height: auto;
+}
 
   .contact{
     padding-bottom: 50px;

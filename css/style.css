@@ -172,6 +172,25 @@ header .header-menu li:hover{
     font-family: 'Oleo Script', cursive;
     padding: 60px 0 40px 0;
 }
+.portfolio .portfolio-lists{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.portfolio .port1{
+    width: 30%;
+    height: 300px;
+}
+.port1 img{
+    width: 100%;
+    height: auto;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.port1 img:hover{
+    opacity: 0.8;
+}
+
 /* CONTACT */
 .contact{
     width: 100%;
