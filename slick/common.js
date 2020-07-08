@@ -3,5 +3,5 @@ $('.slide').slick({
     adaptiveHeight: true,
     arrows: true,
     prevArrow:'<div class="prev">◁</div>',
-    nextArrow:'<div class="next">▷</div>'
+    nextArrow:'<div class="next">▷</div>',
 });
